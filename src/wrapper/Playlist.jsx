@@ -8,7 +8,9 @@ import { AppContext } from '../components/Context'
 import { motion } from 'framer-motion'
 const Playlist = ({value, title}) => {
 
- 
+ const handleNav = () =>{
+  
+ }
   return (
     // <motion.div
     //     initial={{ opacity: 0 }}

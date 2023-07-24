@@ -1,11 +1,8 @@
 .App{
-  background: linear-gradient(135deg, #201606 0%, #00000099 100%), #000000;
+  background: linear-gradient(135deg, rgba(51, 66, 94, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), #000;
   display: flex;
   height: 895px;
-  width: 100%;
   overflow: hidden;
-   transition: background-color .3s ease; /* Add transition for background color change */
-  
 }
 a{
   text-decoration: none;

@@ -38,17 +38,17 @@ line-height: 36px;
     justify-content: space-between;
 
 }
-@media (max-width:768px) {
-    .title-head{
-      font-size: 30px;
-      padding-bottom: 15px;
-    }
-    .search{
-        max-width: 200px;
-        
-    }
+@media (max-width:850px) {
     .search>input{
         font-size: 15px;
     }
-
-  }
+}
+@media (max-width:570px) {
+    .search{
+        width: 90%;
+    }
+    .title-head{
+        font-size: 1.5rem;
+        padding-bottom: 2px;
+    }
+}

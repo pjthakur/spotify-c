@@ -24,10 +24,21 @@ export const AppProvider = ({ children }) => {
 
   const [search, setSearch] = useState("");
   const [playlistNo, setPlaylistNo] = useState();
-  const [finalSong, setFinalSong] = useState({});
+  const [finalSong, setFinalSong] = useState({
+    "__typename": "Song",
+    "_id": "61b6f14dc2f7cafd968c31f0",
+    "artist": "Weeknd",
+    "duration": 320,
+    "photo": "https://images.genius.com/e95f361c27487088fd9dddf8c967bf89.500x500x1.jpg",
+    "title": "Starboy",
+    "url": "https://storage.googleapis.com/similar_sentences/Imagine%20Dragons%20-%20West%20Coast%20(Pendona.com).mp3"
+});
   const [color, setColor] = useState("");
-  const [songId, setSongId] = useState();
+  const [songId, setSongId] = useState("");
   const [currSong, setCurrSong] = useState([]);
+  const [show, setShow] = useState(false)
+
+  
 
   const { loading, error, data } = useQuery(songQuery, {
     variables: { playlistId: playlistNo, search: search },

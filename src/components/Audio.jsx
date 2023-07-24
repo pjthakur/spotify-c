@@ -3,7 +3,7 @@ import more from '../assets/details.png'
 import back from '../assets/backward.png'
 import forw from '../assets/forward.png'
 import play from '../assets/play.png'
-import pause from '../assets/pause1.png'
+import pause from '../assets/pause1.jpg'
 import speaker from '../assets/speaker.png'
 import '../styles/currsong.css'
 

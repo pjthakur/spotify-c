@@ -8,10 +8,12 @@
     display: flex;
     flex-direction: column;
   }
-  @media (max-width:768px) {
-    .title-head{
-      font-size: 30px;
-      
+  @media (max-width:570px) {
+    .playlist-wrap{
+      flex-direction: column-reverse;
     }
-
-  }
+    .playlist-search{
+      position: relative;
+      top: 240px;
+    }
+}

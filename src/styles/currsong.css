@@ -84,6 +84,10 @@ align-items: center;
     width: 24px;
 flex-shrink: 0;
 }
+.play-button > img{
+    height: 48px;
+    width: 48px;
+}
 .back-button{
     display: flex;
     justify-content: center;
@@ -148,3 +152,41 @@ height: 32px !important;
         display: none;
     }
   }
+  @media (max-width:570px) {
+    .audio-player{
+       position: relative;
+       top: 260px;
+    }
+    .player-details{
+        padding-bottom: 2px;
+    }
+    .audio-player-out{
+        padding-left: 40px;
+    }
+    .player-banner-out{
+        width: 190px;
+        height: 190px;
+    }
+    .player-details>h1{
+        padding-bottom: 2px;
+        font-size: 1.5rem;
+    }
+    .player-details>p{
+        padding-bottom: 5px;
+    }
+    .progress-bar-container{
+        width: 190px;
+    }
+    .main-controls{
+        width: 190px;
+    }
+    .play-button{
+        width: 45px;
+        height: 45px;
+    }
+    .play-button>img{
+        width: 45px;
+        height: 45px;
+    }
+    
+}
