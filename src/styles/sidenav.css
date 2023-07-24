@@ -1,0 +1,86 @@
+@import url(https://db.onlinewebfonts.com/c/ed4155ab25c4c16196378daf4fc05f57?family=Basier+Circle+Regular);
+.side-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding: 32px; */
+    max-width: 296.02px;
+    min-width: 167px;
+    width: 100%;
+    /* background-color: antiquewhite; */
+}
+img{
+    width: 50px;
+}
+.navigate{
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    font-family: "Basier Circle Regular";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    gap: 30px;
+    font-size: 20px;
+}
+.navigate>img{
+    width: 133.412px;
+    transition: .5s;
+}
+.navigate > ul {
+    list-style: none;
+  
+}
+.navigate > ul>li{
+    padding-bottom: 16px;
+    line-height: 32px;
+}
+.navigate > ul >li>a{
+    color: #fff;
+    opacity: 0.4000000059604645;
+    
+    text-decoration: none;
+    transition: .3s;
+}
+.navigate > ul >li>a.active{
+    opacity: 1;
+}
+
+
+
+.profile-pic-out{
+    padding: 32px;
+}
+.profile-pic{
+    /* padding: 32px; */
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+@media (max-width:940px) {
+    /* .side-nav{
+        width: 150px;
+    } */
+    .navigate > ul>li{
+        font-size: 20px;
+    }
+    .navigate>img{
+        width: 100.412px;
+    }
+}
+@media (max-width:768px) {
+    .navigate>img{
+        width: 80px;
+    }
+    .navigate > ul>li{
+        font-size: 18px;
+    }
+    
+}
+@media (max-width:620px) {
+    .side-nav{
+        display: none;
+    }    
+}

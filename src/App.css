@@ -1,0 +1,12 @@
+.App{
+  background: linear-gradient(135deg, #201606 0%, #00000099 100%), #000000;
+  display: flex;
+  height: 895px;
+  width: 100%;
+  overflow: hidden;
+   transition: background-color .3s ease; /* Add transition for background color change */
+  
+}
+a{
+  text-decoration: none;
+}

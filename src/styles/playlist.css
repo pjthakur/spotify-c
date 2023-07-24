@@ -1,0 +1,17 @@
+.playlist-wrap{
+    display: flex;
+    width: 100vw;
+    /* padding:16px; */
+  }
+  .playlist-search{
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width:768px) {
+    .title-head{
+      font-size: 30px;
+      
+    }
+
+  }
