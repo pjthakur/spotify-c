@@ -155,7 +155,7 @@ height: 32px !important;
   @media (max-width:570px) {
     .audio-player{
        position: relative;
-       top: 260px;
+       top: 435px;
     }
     .player-details{
         padding-bottom: 2px;
