@@ -18,6 +18,7 @@ const Playlist = ({value, title}) => {
     //     exit={{ opacity: 0, transition: { duration: 0.5 } }}
     //   >
     <div className='playlist-wrap'>
+      
       <div className='playlist-search'>
       <h1 className='title-head'>{title}</h1>
       

@@ -16,4 +16,18 @@
       position: relative;
       top: 240px;
     }
+    
+    .mobile{
+      left:0px;
+      background-color: black;
+      height: 800px;
+      z-index: 55;
+      transition: .6s;
+      height: 100%;
+      /* width: 250px; */
+    }
+    .side-nav{
+      background-color: black;
+      width: 250px;
+    }
 }

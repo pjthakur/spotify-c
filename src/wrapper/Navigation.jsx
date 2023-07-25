@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../assets/Logo.png'
 import profile from '../assets/profile.jpg'
 import { Link, NavLink } from 'react-router-dom'
@@ -6,6 +6,7 @@ import { gql, useQuery } from '@apollo/client'
 import '../styles/sidenav.css'
 import Skeleton from '@mui/material/Skeleton';
 import Stack from '@mui/material/Stack';
+import menu from '../assets/menu.png'
 
 const songQuery = gql`
 query Query {
@@ -17,6 +18,7 @@ query Query {
 `
 const Navigation = () => {
   const {loading, error, data} = useQuery(songQuery)
+  const [shownav, setShowNav] = useState(false)
   if(loading){
     return(
       <Stack spacing={1}>
@@ -37,13 +39,14 @@ const Navigation = () => {
   }
 
   return (
-  
-      <div className='side-nav'>
+  <div className='side-nav-out'>
+
+      <div className= {shownav?'mobile side-nav':"side-nav"}>
         <div className='navigate'>
             <img src={logo} alt='logo'/>
             <ul>
                 {data.getPlaylists.map(links=>{
-                    return<li key={links.id}><NavLink to={links.title==="For You"?`/`:`${links.title}`} >{links.title}</NavLink></li>
+                  return<li key={links.id}><NavLink to={links.title==="For You"?`/`:`${links.title}`} >{links.title}</NavLink></li>
                 })}
             </ul>
         </div>
@@ -53,6 +56,8 @@ const Navigation = () => {
             </div>
         </div>
     </div>
+    <img src={menu} className='menu-icon' onClick={()=>{setShowNav(!shownav)}}/>
+  </div>
         
     
   )

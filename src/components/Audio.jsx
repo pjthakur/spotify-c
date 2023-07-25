@@ -14,7 +14,7 @@ const Audio = ({ url }) => {
   
 
   const audioRef = useRef(null); // Reference to the audio element
-  const [isPlaying, setIsPlaying] = useState(true); // State to manage play/pause
+  const [isPlaying, setIsPlaying] = useState(false); // State to manage play/pause
   const [progress, setProgress] = useState(0);
   const [currentSong, setCurrentSong] = useState(null);
 
